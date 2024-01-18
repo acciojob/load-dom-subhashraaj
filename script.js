@@ -7,4 +7,5 @@ function domLoadSuccess() {
 	const paragraph = document.createElement('p');
 	paragraph.innerText = 'DOM load success';
 	bodyElement.appendChild(paragraph);
+	bodyElement.remove(paragraph);
 }
