@@ -1,11 +1,12 @@
+const bodyElement = document.body;
 document.addEventListener('DOMContentLoaded', function() {
 	domLoadSuccess();
 });
+bodyElement.remove(paragraph);
 
 function domLoadSuccess() {
-	const bodyElement = document.body;
 	const paragraph = document.createElement('p');
 	paragraph.innerText = 'DOM load success';
 	bodyElement.appendChild(paragraph);
-	bodyElement.remove(paragraph);
+	
 }
